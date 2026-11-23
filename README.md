@@ -25,6 +25,12 @@ Wer am Spieltag zum Fußball fährt, kennt das Problem: Auf einmal steht man mit
 - Faustregel: Fanlager wollen **ca. 2 bis 2,5 Stunden vor Anpfiff** am Stadion sein; davon wird rückwärts gerechnet, wann welcher Fan-Strom wo ist
 - Die eigene Route wird gegen alle Zeitfenster geprüft, die einen physisch treffen können: Bahnfahrer gegen die Bahn-Anteile der Fan-Ströme, Auto-/Busfahrer gegen die Straßen-Anteile
 
+### Bekannte Infos eintragen
+
+- Wenn man etwas über die Anreise eines Fanlagers **weiß**, kann man es eintragen – z. B. „Hamburg fährt mit angekündigtem Sonderzug, Abfahrt 09:40" oder „Fanclub-Konvoi über die A7"
+- Eingetragene Infos **ersetzen die Schätzung** für dieses Fanlager: statt aller angenommenen Zeitfenster rechnet das Tool dann mit der echten Verbindung und Abfahrtszeit
+- Für die restlichen Fanlager ohne Infos gilt weiter das Schätzmodell
+
 ### Konfliktpunkte auf der eigenen Route
 
 - **Schiene**: Bahnhöfe, Umstiege und Zugverbindungen, auf denen sich Fanlager begegnen können
