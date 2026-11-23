@@ -1,21 +1,48 @@
 # ⚽ AdvancedRoutenPlaner
 
-Routenplaner für Fußball-Spieltage: plant die Anreise zum Spiel und zeigt, wo sich die Anreise-Routen anderer Fanlager kreuzen können – auf der Schiene und auf der Straße.
+Routenplaner für Fußball-Spieltage: plant die Anreise zum Spiel und zeigt, wo sich die eigene Route mit den Anreise-Routen anderer Fanlager kreuzen kann – auf der Schiene und auf der Straße. Das Ziel: **Konflikte bei der Anreise gar nicht erst entstehen lassen.**
 
 ![Status](https://img.shields.io/badge/Status-Idee-lightgrey)
 
 ## 💡 Die Idee
 
-Wer am Spieltag zum Fußball fährt, kennt das Problem: Auf einmal steht man mit dem Fanlager eines ganz anderen Spiels im selben Zug oder an derselben Raststätte. Der AdvancedRoutenPlaner schaut sich alle Fußballspiele des Tages an und berechnet daraus, wo sich Anreise-Routen kreuzen können – damit man vorher weiß, was einen unterwegs erwartet.
+Wer am Spieltag zum Fußball fährt, kennt das Problem: Auf einmal steht man mit dem Fanlager eines ganz anderen Spiels im selben Zug oder an derselben Raststätte. Der AdvancedRoutenPlaner schaut sich **alle Fußballspiele des Tages** an, berechnet daraus die Fan-Ströme auf Schiene und Straße und prüft die eigene Route dagegen – damit man vorher weiß, was einen unterwegs erwartet, und rechtzeitig ausweichen kann.
 
-## 🧭 Geplante Features
+## 📱 UI-Entwurf (MVP)
 
-- **Spieltags-Übersicht**: Alle Spiele des Tages (Bundesliga bis Regionalliga) als Datengrundlage
-- **Routenplanung**: Anreise zum eigenen Spiel per Bahn oder Auto
-- **Kreuzungs-Hinweise Schiene**: Zeigt Bahnhöfe, Umstiege und Zugverbindungen, auf denen sich Fanlager verschiedener Spiele begegnen können
-- **Kreuzungs-Hinweise Straße**: Zeigt Autobahnabschnitte und Raststätten, an denen sich Anreise-Routen überschneiden
-- **Alternativ-Routen**: Vorschläge, wie man Engstellen zeitlich oder räumlich umfahren kann
+![UI-Mockup: Eingabe, Timeline-Tab und Karten-Tab](docs/mockup.png)
 
-## 🚧 Status
+1. **Eingabe**: Start per GPS-Position oder Ortssuche, Spiel auswählen, Verkehrsmittel (Bahn / Auto / Bus–9-Sitzer), gewünschte Ankunftszeit am Stadion
+2. **Timeline-Tab**: die Route als Zeitstrahl – Konfliktpunkte stehen genau da, wo sie auf der Fahrt passieren
+3. **Karten-Tab**: dieselbe Route auf der Karte, fremde Fan-Ströme als gestrichelte Linien, Details im Sheet unten
 
-Das Projekt ist aktuell in der Ideen-Phase. Hier entsteht bald mehr.
+## 🧭 Features (MVP)
+
+### Fan-Strom-Modell
+
+- **Abdeckung: 1. Bundesliga bis Regionalliga + DFB-Pokal** – gerade in den unteren Ligen sind große, teils risikobehaftete Fanszenen unterwegs
+- Faustregel: Fanlager wollen **ca. 2 bis 2,5 Stunden vor Anpfiff** am Stadion sein; davon wird rückwärts gerechnet, wann welcher Fan-Strom auf welchem Streckenabschnitt ist
+- Bei langen Touren fahren Fans Bus, 9-Sitzer oder Auto – unterschiedliche Fahrzeiten ergeben **mehrere Zeitfenster pro Streckenabschnitt**, nicht nur eins
+
+### Konfliktpunkte auf der eigenen Route
+
+- **Schiene**: Bahnhöfe, Umstiege und Zugverbindungen, auf denen sich Fanlager begegnen können
+- **Straße**: Autobahnabschnitte und Raststätten, an denen sich Anreise-Routen überschneiden
+- **Zwei Warnstufen**: normale Fan-Kreuzungen als Info (🟡), **Risiko-Derbys deutlich markiert** (🔴) – dafür pflegt das Tool eine Liste von Rivalitäten und Risikopaarungen
+
+### Vorschläge statt nur Warnungen
+
+- **Alternative Route oder andere Abfahrtszeit**, wenn das mit vertretbarem Aufwand geht
+- Wenn die Alternative ein großer Umweg wäre (z. B. für Fanclubs im Bus, die nicht mal eben anders fahren): **Verhaltenshinweise statt Umweg** – „auf diesem Abschnitt aufpassen", „an dieser Raststätte nicht anhalten", „diesen Umstieg zügig durchlaufen"
+- Das Tool zwingt nie auf einen 90-Minuten-Umweg: ausweichen, wenn billig – sonst informiert durchfahren
+
+## 🔭 Ausbaustufen
+
+- **Live-Begleitung unterwegs**: Das Tool läuft während der Fahrt mit und reagiert auf Verspätungen und kurzfristige Spielverlegungen – „Achtung, durch deine Verspätung liegst du jetzt im Zeitfenster von …" als Push-Warnung
+
+## 🚧 Status & Herausforderungen
+
+Das Projekt ist aktuell in der Ideen-Phase. Bekannte Knackpunkte:
+
+- Spielplan-Daten für die Regionalligen sind schwerer maschinell zu beschaffen als für Liga 1–3
+- Die Rivalitäten-/Risikopaarungs-Liste braucht laufende Pflege

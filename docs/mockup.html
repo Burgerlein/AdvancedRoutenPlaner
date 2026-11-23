@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="utf-8">
+<title>AdvancedRoutenPlaner – UI-Mockup (MVP)</title>
+<style>
+  body { margin:0; background:#eef1f5; font-family:-apple-system,"Segoe UI",sans-serif; }
+  .wrap { display:flex; gap:28px; justify-content:center; align-items:flex-start; padding:28px; }
+  .col p { text-align:center; font-weight:600; color:#333; margin:10px 0 0; font-size:14px; }
+  .phone { width:290px; background:#111; border-radius:28px; padding:10px; box-shadow:0 8px 24px rgba(0,0,0,.18); }
+  .screen { background:#fafafa; border-radius:20px; overflow:hidden; font-size:12px; color:#111; }
+  .head { background:#1a2e46; color:#fff; padding:12px 14px; }
+  .head b { font-size:14px; display:block; }
+  .head span { opacity:.8; font-size:11px; }
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <!-- Screen 1: Eingabe -->
+  <div class="col">
+    <div class="phone"><div class="screen">
+      <div class="head"><b>⚽ AdvancedRoutenPlaner</b><span>Anreise planen</span></div>
+      <div style="padding:14px;">
+        <div style="font-weight:700; margin-bottom:4px;">Start</div>
+        <div style="display:flex; gap:6px; margin-bottom:6px;">
+          <span style="flex:1; background:#1a2e46; color:#fff; border-radius:8px; padding:7px; text-align:center; font-weight:600;">📍 Meine Position</span>
+          <span style="flex:1; background:#fff; border:1px solid #ccc; border-radius:8px; padding:7px; text-align:center;">🔍 Ort suchen</span>
+        </div>
+        <div style="background:#fff; border:1px solid #ddd; border-radius:8px; padding:8px; color:#666; margin-bottom:12px;">Koblenz, Löhrstraße (GPS)</div>
+        <div style="font-weight:700; margin-bottom:4px;">Mein Spiel</div>
+        <div style="background:#fff; border:1px solid #ddd; border-radius:8px; padding:8px; margin-bottom:4px;">
+          <div style="font-weight:700;">Borussia Dortmund – FC Bayern</div>
+          <div style="color:#666;">Sa 14.03. · 15:30 · Signal Iduna Park</div>
+        </div>
+        <div style="color:#888; font-size:11px; margin-bottom:12px;">Alle Spiele des Tages: 1. Liga bis Regionalliga + DFB-Pokal</div>
+        <div style="font-weight:700; margin-bottom:4px;">Verkehrsmittel</div>
+        <div style="display:flex; gap:6px; margin-bottom:12px;">
+          <span style="flex:1; background:#1a2e46; color:#fff; border-radius:8px; padding:7px; text-align:center; font-weight:600;">🚆 Bahn</span>
+          <span style="flex:1; background:#fff; border:1px solid #ccc; border-radius:8px; padding:7px; text-align:center;">🚗 Auto</span>
+          <span style="flex:1; background:#fff; border:1px solid #ccc; border-radius:8px; padding:7px; text-align:center;">🚌 Bus/9er</span>
+        </div>
+        <div style="font-weight:700; margin-bottom:4px;">Am Stadion sein um</div>
+        <div style="background:#fff; border:1px solid #ddd; border-radius:8px; padding:8px; margin-bottom:14px;">13:15 <span style="color:#888;">(2 h 15 min vor Anstoß)</span></div>
+        <div style="background:#0e9f6e; color:#fff; border-radius:10px; padding:10px; text-align:center; font-weight:700; font-size:13px;">Route prüfen</div>
+      </div>
+    </div></div>
+    <p>1 · Eingabe</p>
+  </div>
+
+  <!-- Screen 2: Timeline -->
+  <div class="col">
+    <div class="phone"><div class="screen">
+      <div class="head"><b>Koblenz → Dortmund</b><span>Sa 14.03. · BVB – FCB · 15:30 · 🚆</span></div>
+      <div style="display:flex; background:#fff; border-bottom:2px solid #1a2e46;">
+        <div style="flex:1; text-align:center; padding:8px; font-weight:700; background:#1a2e46; color:#fff;">Timeline</div>
+        <div style="flex:1; text-align:center; padding:8px; color:#666;">Karte</div>
+      </div>
+      <div style="padding:12px 14px;">
+        <div style="background:#fde8e8; border:1px solid #e02424; border-radius:8px; padding:6px 8px; margin-bottom:10px; font-weight:700; color:#c81e1e;">⚠️ 1 Risiko-Derby auf deiner Route</div>
+        <div style="border-left:3px solid #1a2e46; margin-left:7px; padding-left:14px;">
+          <div style="margin-bottom:10px;">
+            <div style="font-weight:700;">10:12 · Koblenz Hbf</div>
+            <div style="color:#666;">RE 5 → Köln</div>
+          </div>
+          <div style="margin-bottom:10px; background:#fde8e8; border:1px solid #e02424; border-radius:8px; padding:8px; margin-left:-14px; padding-left:14px;">
+            <div style="font-weight:700; color:#c81e1e;">🔴 11:35 · Köln Hbf – RISIKO-DERBY</div>
+            <div style="color:#333;">Köln – Gladbach · beide Fanlager am Hbf (Ankunftsfenster 11:00–13:30)</div>
+            <div style="color:#c81e1e; font-weight:600; margin-top:2px;">Umstieg zügig, Gleis 6–9 meiden</div>
+          </div>
+          <div style="margin-bottom:10px; background:#fdf6b2; border:1px solid #c27803; border-radius:8px; padding:8px; margin-left:-14px; padding-left:14px;">
+            <div style="font-weight:700; color:#8e5b00;">🟡 12:20 · Duisburg Hbf</div>
+            <div style="color:#333;">RWE-Fans Richtung Essen im RE 2 · unkritisch</div>
+          </div>
+          <div>
+            <div style="font-weight:700;">13:05 · Dortmund Hbf ✅</div>
+            <div style="color:#666;">2 h 25 min vor Anstoß</div>
+          </div>
+        </div>
+        <div style="margin-top:10px; background:#e8f5ee; border:1px solid #0e9f6e; border-radius:8px; padding:8px;">
+          <div style="font-weight:700; color:#046c4e;">💡 Abfahrt 09:12 statt 10:12</div>
+          <div style="color:#333;">Vermeidet das Derby-Fenster in Köln · kein Umweg</div>
+          <div style="display:flex; gap:6px; margin-top:6px;">
+            <span style="background:#0e9f6e; color:#fff; border-radius:6px; padding:4px 10px; font-weight:600;">Übernehmen</span>
+            <span style="background:#fff; border:1px solid #ccc; border-radius:6px; padding:4px 10px;">So lassen</span>
+          </div>
+        </div>
+      </div>
+    </div></div>
+    <p>2 · Ergebnis: Timeline-Tab</p>
+  </div>
+
+  <!-- Screen 3: Karte -->
+  <div class="col">
+    <div class="phone"><div class="screen">
+      <div class="head"><b>Koblenz → Dortmund</b><span>Sa 14.03. · BVB – FCB · 15:30 · 🚆</span></div>
+      <div style="display:flex; background:#fff; border-bottom:2px solid #1a2e46;">
+        <div style="flex:1; text-align:center; padding:8px; color:#666;">Timeline</div>
+        <div style="flex:1; text-align:center; padding:8px; font-weight:700; background:#1a2e46; color:#fff;">Karte</div>
+      </div>
+      <svg viewBox="0 0 270 230" style="display:block; background:#e8eef3;">
+        <path d="M30 125 C 60 122, 75 116, 90 110" fill="none" stroke="#e02424" stroke-width="3" stroke-dasharray="5 4" opacity=".7"/>
+        <path d="M210 150 C 180 120, 160 90, 142 70" fill="none" stroke="#c27803" stroke-width="3" stroke-dasharray="5 4" opacity=".7"/>
+        <path d="M45 190 C 62 160, 72 140, 90 110 S 150 60, 180 35" fill="none" stroke="#1a2e46" stroke-width="4" stroke-linecap="round"/>
+        <circle cx="45" cy="190" r="6" fill="#1a2e46"/>
+        <text x="55" y="194" font-size="10" fill="#333">Koblenz 10:12</text>
+        <circle cx="90" cy="110" r="10" fill="#e02424"/>
+        <text x="90" y="114" font-size="10" fill="#fff" text-anchor="middle" font-weight="bold">!</text>
+        <text x="104" y="106" font-size="10" fill="#c81e1e" font-weight="bold">Köln Hbf 11:35</text>
+        <circle cx="140" cy="68" r="8" fill="#f6c343"/>
+        <text x="152" y="62" font-size="10" fill="#8e5b00">Duisburg 12:20</text>
+        <circle cx="180" cy="35" r="6" fill="#0e9f6e"/>
+        <text x="192" y="39" font-size="10" fill="#046c4e" font-weight="bold">Dortmund 13:05</text>
+        <rect x="8" y="8" width="118" height="46" rx="6" fill="#fff" opacity=".9"/>
+        <line x1="14" y1="20" x2="34" y2="20" stroke="#1a2e46" stroke-width="4"/>
+        <text x="38" y="23" font-size="9" fill="#333">Meine Route</text>
+        <line x1="14" y1="34" x2="34" y2="34" stroke="#e02424" stroke-width="3" stroke-dasharray="5 4"/>
+        <text x="38" y="37" font-size="9" fill="#333">Fan-Strom Risiko</text>
+        <line x1="14" y1="48" x2="34" y2="48" stroke="#c27803" stroke-width="3" stroke-dasharray="5 4"/>
+        <text x="38" y="51" font-size="9" fill="#333">Fan-Strom normal</text>
+      </svg>
+      <div style="background:#fff; border-top-left-radius:14px; border-top-right-radius:14px; margin-top:-12px; position:relative; padding:10px 14px 12px; box-shadow:0 -2px 8px rgba(0,0,0,.08);">
+        <div style="width:36px; height:4px; background:#ddd; border-radius:2px; margin:0 auto 8px;"></div>
+        <div style="font-weight:700; color:#c81e1e;">🔴 Köln Hbf · 11:35 · Risiko-Derby</div>
+        <div style="color:#333;">Köln – Gladbach · Umstieg zügig, Gleis 6–9 meiden</div>
+      </div>
+    </div></div>
+    <p>3 · Ergebnis: Karten-Tab</p>
+  </div>
+
+</div>
+</body>
+</html>
