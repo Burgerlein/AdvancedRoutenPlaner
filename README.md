@@ -21,8 +21,9 @@ Wer am Spieltag zum Fußball fährt, kennt das Problem: Auf einmal steht man mit
 ### Fan-Strom-Modell
 
 - **Abdeckung: 1. Bundesliga bis Regionalliga + DFB-Pokal** – gerade in den unteren Ligen sind große, teils risikobehaftete Fanszenen unterwegs
-- Faustregel: Fanlager wollen **ca. 2 bis 2,5 Stunden vor Anpfiff** am Stadion sein; davon wird rückwärts gerechnet, wann welcher Fan-Strom auf welchem Streckenabschnitt ist
-- Bei langen Touren fahren Fans Bus, 9-Sitzer oder Auto – unterschiedliche Fahrzeiten ergeben **mehrere Zeitfenster pro Streckenabschnitt**, nicht nur eins
+- Man gibt nur die **eigene Fahrt** ein (Spiel, Start, Verkehrsmittel) – wie die anderen Fanlager anreisen, weiß niemand. Deshalb wird **jedes fremde Fanlager auf allen Verkehrsmitteln gleichzeitig modelliert**: ein Teil in Zügen über die typischen Bahn-Korridore, ein Teil mit Bus, 9-Sitzer oder Auto über die Autobahnen – mit jeweils eigenen Fahrzeiten und damit **mehreren Zeitfenstern pro Streckenabschnitt**
+- Faustregel: Fanlager wollen **ca. 2 bis 2,5 Stunden vor Anpfiff** am Stadion sein; davon wird rückwärts gerechnet, wann welcher Fan-Strom wo ist
+- Die eigene Route wird gegen alle Zeitfenster geprüft, die einen physisch treffen können: Bahnfahrer gegen die Bahn-Anteile der Fan-Ströme, Auto-/Busfahrer gegen die Straßen-Anteile
 
 ### Konfliktpunkte auf der eigenen Route
 
