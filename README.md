@@ -30,6 +30,7 @@ Wer am Spieltag zum Fußball fährt, kennt das Problem: Auf einmal steht man mit
 - Wenn man etwas über die Anreise eines Fanlagers **weiß**, kann man es eintragen – z. B. „Hamburg fährt mit angekündigtem Sonderzug, Abfahrt 09:40" oder „Fanclub-Konvoi über die A7"
 - Eingetragene Infos **ersetzen die Schätzung** für dieses Fanlager: statt aller angenommenen Zeitfenster rechnet das Tool dann mit der echten Verbindung und Abfahrtszeit
 - Für die restlichen Fanlager ohne Infos gilt weiter das Schätzmodell
+- Eingetragene Infos bleiben **lokal auf dem eigenen Gerät** – es gibt bewusst kein Teilen und keine Community-Funktion
 
 ### Konfliktpunkte auf der eigenen Route
 
@@ -42,6 +43,11 @@ Wer am Spieltag zum Fußball fährt, kennt das Problem: Auf einmal steht man mit
 - **Alternative Route oder andere Abfahrtszeit**, wenn das mit vertretbarem Aufwand geht
 - Wenn die Alternative ein großer Umweg wäre (z. B. für Fanclubs im Bus, die nicht mal eben anders fahren): **Verhaltenshinweise statt Umweg** – „auf diesem Abschnitt aufpassen", „an dieser Raststätte nicht anhalten", „diesen Umstieg zügig durchlaufen"
 - Das Tool zwingt nie auf einen 90-Minuten-Umweg: ausweichen, wenn billig – sonst informiert durchfahren
+
+## 🚫 Nicht-Ziele
+
+- **Keine Community- oder Cloud-Funktionen**: keine geteilten Infos, keine Accounts, kein Server mit Nutzerdaten
+- **Offline-first**: Planung und alle eingetragenen Daten bleiben lokal auf dem Gerät; Netz braucht es nur zum Aktualisieren von Spielplänen und Fahrplandaten
 
 ## 🔭 Ausbaustufen
 
